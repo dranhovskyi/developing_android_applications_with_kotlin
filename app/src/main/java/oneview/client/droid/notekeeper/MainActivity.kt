@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
             val newValue = originalValue * 2
             textView.text = newValue.toString()
 
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+            Snackbar.make(view, "Value $originalValue changed to $newValue", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
         }
     }
