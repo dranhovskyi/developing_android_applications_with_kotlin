@@ -1,11 +1,12 @@
 package oneview.client.droid.notekeeper
 
-class DataManager {
+object DataManager {
     val courses = HashMap<String, CourseInfo>()
     val notes = ArrayList<NoteInfo>()
 
     init {
         initializeCourses()
+        initializeNotes()
     }
 
     private fun initializeCourses() {
@@ -20,5 +21,12 @@ class DataManager {
 
         course = CourseInfo(courseId = "java_core", title = "Java Fundamentals: The Core Platform")
         courses.set(course.courseId, course)
+    }
+
+    private fun initializeNotes() {
+        for (courseInfo in courses) {
+            var note = NoteInfo(courseInfo.value, "Title", "Text")
+            notes.add(note)
+        }
     }
 }
