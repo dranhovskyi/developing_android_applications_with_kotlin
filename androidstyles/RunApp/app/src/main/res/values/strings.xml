@@ -1,4 +1,4 @@
-<!--
+ <!--
  Copyright 2020 Google Inc.
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,6 +16,12 @@
 
 <resources>
     <string name="app_name">RunApp</string>
-    <string name="runapp">RunApp</string>
-
+    <string name="running_timer">Running Timer</string>
+    <string name="timer_default_value">00:00:00</string>
+    <string name="timer_label">min\t\tsec\t\tdeci</string>
+    <string name="start_label">Start</string>
+    <string name="stop_label">Stop</string>
+    <string name="reset_label">Reset</string>
+    <string name="welcome_to_app_label">Welcome To RunApp!</string>
+    <string name="get_started_label">Get Started</string>
 </resources>
